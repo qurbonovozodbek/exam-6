@@ -1,0 +1,166 @@
+body {
+    font-family: "Outfit", sans-serif;
+}
+.sidebar {
+    position: sticky;
+    top: 40px;
+    width: 96px;
+    height: 960px;
+    background: rgb(22, 29, 47);
+    border-radius: 20px;
+    padding: 35px 31px;
+}
+.card {
+    display: flex;
+    padding: 32px;
+}
+.logo {
+    margin-bottom: 74px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 3px;
+}
+.icons {
+    color: rgb(90, 105, 143);
+    font-size: 28px;
+    cursor: pointer;
+}
+.menu {
+    padding: 32px 0px 0px 32px;
+}
+.search {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.search-icon {
+    color: white;
+    width: 32px;
+    height: 32px;
+}
+.movie-search {
+    width: 321px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+.movie-search::placeholder {
+    font-size: 22px;
+    font-weight: 300;
+}
+.trending-movies {
+    /* width: 1242px; */
+    width: 89.7vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    margin-left: -32px;
+    padding: 0px 0px 0px 32px;
+}
+.movie-card {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
+    width: 470px;
+    height: 230px;
+    border-radius: 8px;
+    margin-right: 40px;
+}
+.movie-img {
+    width: 470px;
+    height: 230px;
+    position: absolute;
+    border-radius: 8px;
+    z-index: -1;
+}
+.trending {
+    margin-top: 34px;
+}
+.movie-title-head {
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: white;
+}
+.movie-title {
+    margin-top: 154px;
+    margin-left: 24px;
+}
+.movie-title h2 {
+    display: inline;
+    font-weight: 500;
+    font-style: 24px;
+    color: white;
+}
+.movie-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    opacity: 0.6;
+    margin-left: 5px;
+}
+.movie-info span {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+.movie-info-icon {
+    color: white;
+    width: 12px;
+    height: 12px;
+}
+.recommend {
+    margin-top: 40px;
+}
+.recommend-title {
+    font-weight: 300;
+    font-style: 32px;
+    letter-spacing: -0.5px;
+    color: white;
+    margin-bottom: 32px;
+}
+.recommend-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.recommend-card {
+    width: 280px;
+    border-radius: 8px;
+}
+.recommend-card img {
+    width: 280px;
+    height: 174px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+.recommend-title-info {
+    width: 137px;
+}
+.recommend-title-info h2 {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+.recommend-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    opacity: 0.6;
+}
+.recommend-info span {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
