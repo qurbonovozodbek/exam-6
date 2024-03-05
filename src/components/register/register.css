@@ -31,12 +31,12 @@ form {
     position: relative;
     width: 100%;
 }
-.box p {
+.pError {
     position: absolute;
     font-size: 13px;
     font-weight: 300;
     right: 17px;
-    top: -20px;
+    top: 0px;
 }
 .login-register-input {
     width: 100%;
@@ -53,7 +53,7 @@ form {
     font-size: 15px;
     color: #5A698F;
 }
-button {
+.login-btn {
     width: 100%;
     border: none;
     outline: none;
@@ -67,7 +67,7 @@ button {
     margin-top: 24px;
     transition: all 0.5s;
 }
-button:hover {
+.login-btn:hover {
     transition: all 0.5s ease-in-out;
     background-color: #fff;
     color: black;

@@ -122,12 +122,24 @@ body {
 .recommend {
     margin-top: 40px;
 }
-.recommend-title {
-    font-weight: 300;
-    font-style: 32px;
+
+.recommend-title-head {
+    font-weight: 500;
+    font-size: 32px;
     letter-spacing: -0.5px;
     color: white;
     margin-bottom: 32px;
+}
+.recommend-title h2 {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.recommend-title h2:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px rgb(0, 255, 195);
 }
 .recommend-cards {
     display: flex;
@@ -135,15 +147,26 @@ body {
     gap: 40px;
 }
 .recommend-card {
+    position: relative;
     width: 280px;
     border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #10141E;
 }
+.recommend-card:hover {
+    box-shadow: 0 0 20px blue;
+    border: 1px solid rgb(0, 140, 255);
+}
+
 .recommend-card img {
-    width: 280px;
+    cursor:default;
+    width: 278px;
     height: 174px;
     margin-bottom: 8px;
     border-radius: 8px;
+    transition: all 0.4s ease-in-out;
 }
+
 .recommend-title-info {
     width: 137px;
 }
@@ -163,4 +186,162 @@ body {
     font-size: 15px;
     font-weight: 300;
     color: white;
+}
+.recommend-save {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+.recommend-save i {
+    padding: 8px 10px;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.recommend-save i:hover {
+    transform: scale(115%);
+}
+.recommend-save i:active {
+    transform: scale(100%);
+}
+.loader {
+    position: absolute;
+    top: 30%;
+    left: 650px;
+}
+.loader-single {
+    position: absolute;
+    top: 45%;
+    left: 560px;
+}
+.loader-movie {
+    position: absolute;
+    top: 45%;
+    left: 620px;
+}
+.loader-trending {
+    position: absolute;
+    top: 15%;
+    left: 620px;
+}
+.exit {
+    margin-top: 210px;
+    width: 30px;
+    height: 30px;
+    color: rgb(90, 105, 143);
+    cursor: pointer;
+}
+.single {
+    position: sticky;
+    margin-top: -100px;
+    margin-left: -158px;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #161D2F;
+    padding: 30px 180px 180px 180px;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+.single-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+.single-btn i {
+    font-size: 25px;
+    color: yellow;
+    transition: all 0.4s ease-in-out;
+}
+.single-btn i:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px yellow;
+}
+.single-page-info {
+    padding: 0px 70px;
+    display: flex;
+    gap: 80px;
+}
+.single-img img {
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+    border: 2px solid yellow;
+}
+.single-info h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    color: yellow;
+}
+.single-ratings {
+    display: flex;
+    justify-content: space-between;
+}
+.rating-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.mini-info {
+    width: 172px;
+    padding: 20px 20px;
+    border-radius: 8px;
+    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+}
+.mini-icon {
+    width: 30px;
+    height: 30px;
+    color: yellow;
+}
+.mini-info i {
+    font-size: 30px;
+    color: yellow;
+}
+.mini-info span {
+    font-size: 19px;
+    margin-left: 12px;
+    font-weight: 400;
+    color: yellow;
+}
+.trailer {
+    margin-top: 80px;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: yellow;
+    border-radius: 50%;
+}
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    color: yellow;
+    transition: all 0.4s ease-in-out;
+    border-radius: 50%;
+}
+.btn-icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px yellow;
+    transform: scale(115%);
+}
+.desc {
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 8px;
+}
+.desc p {
+    color: yellow;
 }

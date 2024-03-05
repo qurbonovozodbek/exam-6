@@ -9,6 +9,8 @@ import "./home.css";
 import Movie from './links/movies'
 import Series from "./links/series";
 import Bookmarks from "./links/bookmarks";
+import { IoExitOutline } from "react-icons/io5";
+
 
 
 function Layout() {
@@ -38,6 +40,9 @@ function Layout() {
                   onClick={() => navigate('/bookmarks')}
                 />
               </div>
+            </div>
+            <div className="toLogin">
+              <IoExitOutline className="exit" onClick={() => navigate('/register')}/>
             </div>
           </div>
           <div className="menu">

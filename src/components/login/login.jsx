@@ -90,14 +90,14 @@ function login() {
             <form>
                 <div className="box">
                     <input className='login-register-input' type="email" placeholder='Email address' ref={emailRef}/>
-                    {error1 && <p style={{ color: 'red' }}>{error1}</p>}
+                    {error1 && <p className='pError' style={{ color: 'red' }}>{error1}</p>}
                 </div>
                 <div className="box">
                     <input className='login-register-input' type="password" placeholder='Password' ref={passwordRef}/>
-                    {error2 && <p style={{ color: 'red' }}>{error2}</p>}
+                    {error2 && <p className='pError' style={{ color: 'red' }}>{error2}</p>}
                 </div>
             </form>
-            <button onClick={handleClick}>Create an account</button>
+            <button className='login-btn' onClick={handleClick}>Create an account</button>
             <p className='loginP'>Don't have an account? <span className='aLink' onClick={() => navigate('/register')} >Sign Up</span> </p>
         </div>
     </>
